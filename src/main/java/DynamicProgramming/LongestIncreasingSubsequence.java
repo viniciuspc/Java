@@ -15,11 +15,20 @@ public class LongestIncreasingSubsequence {
         for (int i = 0; i < n; i++) {
             ar[i] = sc.nextInt();
         }
-
+    	//int ar[] = {50, 3, 10, 7, 40, 80};
         System.out.println(LIS(ar));
+    	
+    	/*int[] ar = {3,10,20,0,0};
+    	int l = -1;
+    	int r = 3;
+    	int key = 11;
+    	
+    	System.out.println(upperBound(ar, l, r, key));*/
+    	
+    	
     }
 
-    private static int upperBound(int[] ar, int l, int r, int key) {
+    public static int upperBound(int[] ar, int l, int r, int key) {
         while (l < r - 1) {
             int m = (l + r) / 2;
             if (ar[m] >= key)
@@ -31,7 +40,7 @@ public class LongestIncreasingSubsequence {
         return r;
     }
 
-    private static int LIS(int[] array) {
+    public static int LIS(int[] array) {
         int N = array.length;
         if (N == 0)
             return 0;
