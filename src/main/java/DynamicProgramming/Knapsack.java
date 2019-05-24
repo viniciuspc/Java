@@ -6,7 +6,7 @@ package DynamicProgramming;
 
 public class Knapsack {
 
-    private static int knapSack(int W, int wt[], int val[], int n) {
+    public static int knapSack(int W, int wt[], int val[], int n) {
         int i, w;
         int rv[][] = new int[n + 1][W + 1];    //rv means return value
 
