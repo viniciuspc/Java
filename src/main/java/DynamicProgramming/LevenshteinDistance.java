@@ -16,7 +16,7 @@ public class LevenshteinDistance {
         }
     }
 
-    private static int calculate_distance(String a, String b) {
+    public static int calculate_distance(String a, String b) {
         int len_a = a.length() + 1;
         int len_b = b.length() + 1;
         int[][] distance_mat = new int[len_a][len_b];

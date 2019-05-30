@@ -11,7 +11,9 @@ public class EulersFunction {
         int result = n;
         for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) {
-                while (n % i == 0) n /= i;
+                while (n % i == 0) {
+                	n /= i;
+                }
                 result -= result / i;
             }
         }
@@ -20,8 +22,8 @@ public class EulersFunction {
     }
 
     public static void main(String[] args) {
-        for (int i = 1; i < 100; i++) {
-            System.out.println(getEuler(i));
-        }
+        //for (int i = 1; i < 100; i++) {
+            System.out.println(getEuler(10));
+        //}
     }
 }
